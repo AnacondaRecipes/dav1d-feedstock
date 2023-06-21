@@ -42,6 +42,9 @@ test:
 about:
   home: https://code.videolan.org/videolan/dav1d
   summary: dav1d is the fastest AV1 decoder on all platforms
+  description: dav1d is the fastest AV1 decoder on all platforms
+  dev_url: https://code.videolan.org/videolan/dav1d
+  doc_url: https://code.videolan.org/videolan/dav1d
   license: BSD-2-Clause
   license_family: BSD
   license_file: COPYING
