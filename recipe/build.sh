@@ -8,7 +8,7 @@ meson setup builddir          \
     -Denable_tests=false      \
     --prefix=$PREFIX          \
     --buildtype=release       \
-    --libdir=lib
+    -Dlibdir=lib
 
 meson compile -C builddir
 
