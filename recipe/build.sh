@@ -1,11 +1,13 @@
 set -ex
 
+# libdir is set to lib, otherwise on aarch64 and some others 
+# will default to lib64
+
 meson setup builddir          \
     ${MESON_ARGS}             \
     -Denable_tests=false      \
     --prefix=$PREFIX          \
     --buildtype=release       \
-    # without this, on aarch64 and some others defaults to lib64
     --libdir=lib
 
 meson compile -C builddir
