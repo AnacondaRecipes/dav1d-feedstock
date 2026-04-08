@@ -3,3 +3,4 @@ upstream_sources:
   - gitlab:
       identifier: videolan/dav1d
       host: code.videolan.org
+      use_max_tag: true
