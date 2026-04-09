@@ -4,3 +4,6 @@ upstream_sources:
       identifier: videolan/dav1d
       host: code.videolan.org
       use_max_tag: true
+      exclude_regex: (?i)(?:^|[-._])(?:rc\d*|alpha\d*|beta\d*|pre\d+|preview|dev\d+)(?:[-._]|$)
+      from_pattern: ^v?(\d+(?:\.\d+)*.*)$
+      to_pattern: \1
