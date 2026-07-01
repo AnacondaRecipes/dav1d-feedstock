@@ -14,7 +14,7 @@ source:
   sha256: cbe212b02faf8c6eed5b6d55ef8a6e363aaab83f15112e960701a9c3df813686
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage( name|lower, max_pin='x.x.x') }}
 
@@ -22,7 +22,7 @@ requirements:
   build:
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
-    - meson >=0.49
+    - meson >=0.49  # analint: python_build_tools_in_host
     - ninja-base
     - nasm >=2.14  # [x86_64]
 
